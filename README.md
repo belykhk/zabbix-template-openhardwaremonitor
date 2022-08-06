@@ -3,7 +3,7 @@ A Zabbix Template to get sensor information from OpenHardwareMonintor via WMI.
 
 ## Installation
 
- - Install Open Hardware Monitor on machine you wany to monitor and make sure it set on `Run on Windows startup`
+ - Install Open Hardware Monitor on machine you want to monitor and make sure it set on `Run on Windows startup`
  - Import the template in `/template` to your Zabbix Server instance, and assign it to a host running OpenHardwareMonitor that has WMI accessible.
 
 ## Support

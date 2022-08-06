@@ -1,12 +1,9 @@
 # zabbix-template-openhardwaremonitor
-A Zabbix Template and UserParameter scripts to get sensor information from OpenHardwareMonintor via WMI.
+A Zabbix Template to get sensor information from OpenHardwareMonintor via WMI.
 
 ## Installation
 
- - Copy the contents of `/bin` to the location your Zabbix Agent will be reading UserParameter scripts from.
- - Set the user parameters in your Zabbix Agent configuration file. Use this structure (zabbix\bin to replace by the location where you but the scripts: 
-   - UserParameter=ohm_disco,powershell -Noprofile -ExecutionPolicy Bypass -File "c:\zabbix\bin\ohm_disco.ps1"
-   - UserParameter=ohm_capture[*],powershell -Noprofile -ExecutionPolicy Bypass -File "c:\zabbix\bin\ohm_get.ps1" $1
+ - Install Open Hardware Monitor on machine you wany to monitor and make sure it set on `Run on Windows startup`
  - Import the template in `/template` to your Zabbix Server instance, and assign it to a host running OpenHardwareMonitor that has WMI accessible.
 
 ## Support
